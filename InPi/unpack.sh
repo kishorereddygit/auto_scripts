@@ -43,6 +43,7 @@ sudo apt install python3-dev
 sudo apt-get install -y python3 python3-pip
 sudo pip3 install docker-compose
 sudo apt update
+
 #Manage Docker as a non-root user
 sudo usermod -aG docker $USER
 newgrp docker 
