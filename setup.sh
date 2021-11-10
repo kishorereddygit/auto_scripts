@@ -46,6 +46,7 @@ sudo usermod -aG docker $USER
 newgrp docker 
 docker run hello-world
 docker --version
+
 #Get Chip-tool
 git clone git@github.com:CHIP-Specifications/chip-certification-tool.git
 cd chip-certification-tool
