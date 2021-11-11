@@ -46,18 +46,6 @@ mv $CHIP_TOOL_EXEC_PATH/chip-tool $OUT_DEST_PATH/chip-tool
 "$CHIP_ROOT/scripts/examples/gn_build_example.sh" "$CHIP_TOOL_ROOT" "$CHIP_TOOL_IPV6ONLY_EXEC_PATH" 'chip_mdns="platform" chip_inet_config_enable_ipv4=false'
 mv $CHIP_TOOL_IPV6ONLY_EXEC_PATH/chip-tool $OUT_DEST_PATH/chip-tool-ipv6only
 
-# Sample app: TV
-TV_ROOT="$CHIP_ROOT/examples/tv-app/linux"
-TV_EXEC_PATH="$TV_ROOT/out/host"
-"$CHIP_ROOT/scripts/examples/gn_build_example.sh" "$TV_ROOT" "$TV_EXEC_PATH"
-mv $ALL_CLUSTER_EXEC_PATH/chip-tv-app $OUT_DEST_PATH/
-
-# Sample app: TV-casting
-TV_CASTING_ROOT="$CHIP_ROOT/examples/tv-casting-app/linux"
-TV_CASTING_EXEC_PATH="$TV_CASTING_ROOT/out/host"
-"$CHIP_ROOT/scripts/examples/gn_build_example.sh" "$TV_CASTING_ROOT" "$TV_CASTING_EXEC_PATH"
-mv $TV_CASTING_EXEC_PATH/chip-tv-casting-app $OUT_DEST_PATH
-
 # Sample app: all-cluster
 ALL_CLUSTER_ROOT="$CHIP_ROOT/examples/all-clusters-app/linux"
 ALL_CLUSTER_EXEC_PATH="$ALL_CLUSTER_ROOT/out/host"
@@ -93,6 +81,18 @@ OTA_REQUESTOR_ROOT="$CHIP_ROOT/examples/ota-requestor-app/linux"
 OTA_REQUESTOR_EXEC_PATH="$OTA_REQUESTOR_ROOT/out/host"
 "$CHIP_ROOT/scripts/examples/gn_build_example.sh" "$OTA_REQUESTOR_ROOT" "$OTA_REQUESTOR_EXEC_PATH" 'chip_config_network_layer_ble=false'
 mv $OTA_REQUESTOR_EXEC_PATH/chip-ota-requestor-app $OUT_DEST_PATH/
+
+# Sample app: TV
+TV_ROOT="$CHIP_ROOT/examples/tv-app/linux"
+TV_EXEC_PATH="$TV_ROOT/out/host"
+"$CHIP_ROOT/scripts/examples/gn_build_example.sh" "$TV_ROOT" "$TV_EXEC_PATH"
+mv $ALL_CLUSTER_EXEC_PATH/chip-tv-app $OUT_DEST_PATH/
+
+# Sample app: TV-casting
+TV_CASTING_ROOT="$CHIP_ROOT/examples/tv-casting-app/linux"
+TV_CASTING_EXEC_PATH="$TV_CASTING_ROOT/out/host"
+"$CHIP_ROOT/scripts/examples/gn_build_example.sh" "$TV_CASTING_ROOT" "$TV_CASTING_EXEC_PATH"
+mv $TV_CASTING_EXEC_PATH/chip-tv-casting-app $OUT_DEST_PATH
 
 # Build python-dev-controller
 "$CHIP_ROOT/scripts/build_python.sh" --chip_detail_logging true --chip_mdns platform
