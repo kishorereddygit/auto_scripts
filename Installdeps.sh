@@ -19,13 +19,12 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 sudo apt-get install libffi-dev libssl-dev -y
 sudo apt install python3-dev -y
 sudo apt-get install -y python3 python3-pip -y
-pip uninstall docker-compose
+sudo pip3 uninstall docker-compose
 sudo pip3 install docker-compose -y
-sudo apt update
 
 #Manage Docker as a non-root user
 sudo usermod -aG docker $USER
 newgrp docker 
 docker run hello-world
 docker --version
-echo \Reboot your Pi
+echo \Update and Reboot your Pi
