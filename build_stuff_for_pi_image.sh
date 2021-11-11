@@ -84,7 +84,7 @@ mv $OTA_REQUESTOR_EXEC_PATH/chip-ota-requestor-app $OUT_DEST_PATH/
 TV_ROOT="$CHIP_ROOT/examples/tv-app/linux"
 TV_EXEC_PATH="$TV_ROOT/out/host"
 "$CHIP_ROOT/scripts/examples/gn_build_example.sh" "$TV_ROOT" "$TV_EXEC_PATH"
-mv $ALL_CLUSTER_EXEC_PATH/chip-tv-app $OUT_DEST_PATH/
+mv $TV_EXEC_PATH/chip-tv-app $OUT_DEST_PATH
 
 # Sample app: TV-casting
 TV_CASTING_ROOT="$CHIP_ROOT/examples/tv-casting-app/linux"
