@@ -104,10 +104,21 @@ cd "$CERT_TOOL_ROOT"
 git archive-all -v "$OUT_DEST_PATH/chip-certification-tool.tar.gz"
 
 # Copy helper scripts
-cp $CHIP_ROOT $OUT_DEST_PATH/
+cp -r $CHIP_ROOT $OUT_DEST_PATH/
 cp "$ROOT_DIR/InPi/unpack.sh" $OUT_DEST_PATH/
 cp "$ROOT_DIR/InPi/rc.local" $OUT_DEST_PATH/
 cp "$ROOT_DIR/InPi/start-test-harness.sh" $OUT_DEST_PATH/
+
+#moving all apps to dir
+mv chip-all-clusters-app ~/apps
+mv chip-bridge-app ~/apps
+mv chip-lighting-app ~/apps
+mv chip-ota-provider-app ~/apps
+mv chip-ota-requestor-app ~/apps
+mv chip-tool ~/apps
+mv chip-tool-ipv6only ~/apps
+mv chip-tv-app ~/apps
+mv chip-tv-casting-app ~/apps
 
 # compress as zip
 cd "$ROOT_DIR"
