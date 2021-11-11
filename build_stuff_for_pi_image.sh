@@ -24,8 +24,6 @@ CERT_TOOL_ROOT="$ROOT_DIR/chip-certification-tool"
 CHIP_ROOT="$CERT_TOOL_ROOT/backend/third_party/connectedhomeip/repo"
 OUT_DEST_PATH="$ROOT_DIR/send_to_pi"
 
-sudo apt install python3.8-venv
-
 # Setup environment
 source "$CHIP_ROOT/scripts/activate.sh"
 
