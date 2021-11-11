@@ -53,16 +53,16 @@ docker --version
 
 # Move chip binaries to home
 mkdir apps
-mv "$ROOT_DIR/chip-tool" $APPS 
-mv "$ROOT_DIR/chip-tool-ipv6only" $APPS
-mv "$ROOT_DIR/chip-all-clusters-app" $APPS 
-mv "$ROOT_DIR/chip-lighting-app" $APPS
-mv "$ROOT_DIR/chip-bridge-app" $APPS 
-mv "$ROOT_DIR/thermostat-app" $APPS 
-mv "$ROOT_DIR/chip-ota-provider-app" $APPS
-mv "$ROOT_DIR/chip-ota-requestor-app" $APPS
-mv "$ROOT_DIR/chip-tv-app" $APPS
-mv "$ROOT_DIR/chip-tv-casting-app" $APPS
+mv "$ROOT_DIR/chip-tool" "$APPS/" 
+mv "$ROOT_DIR/chip-tool-ipv6only" "$APPS/"
+mv "$ROOT_DIR/chip-all-clusters-app" "$APPS/" 
+mv "$ROOT_DIR/chip-lighting-app" "$APPS/"
+mv "$ROOT_DIR/chip-bridge-app" "$APPS/" 
+mv "$ROOT_DIR/thermostat-app" "$APPS/" 
+mv "$ROOT_DIR/chip-ota-provider-app" "$APPS/"
+mv "$ROOT_DIR/chip-ota-requestor-app" "$APPS/"
+mv "$ROOT_DIR/chip-tv-app" "$APPS/"
+mv "$ROOT_DIR/chip-tv-casting-app" "$APPS/"
 
 # move and install python-dev-controller
 rm -rf "$SDK_DIR" # delete old stuff
