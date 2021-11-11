@@ -104,10 +104,10 @@ cd "$CERT_TOOL_ROOT"
 git archive-all -v "$OUT_DEST_PATH/chip-certification-tool.tar.gz"
 
 # Copy helper scripts
-cp "$ROOT_DIR/chip-certification-tool/backend/third_party/connectedhomeip/repo" $OUT_DEST_PATH/
-cp "$ROOT_DIR/others/unpack.sh" $OUT_DEST_PATH/
-cp "$ROOT_DIR/others/rc.local" $OUT_DEST_PATH/
-cp "$ROOT_DIR/others/start-test-harness.sh" $OUT_DEST_PATH/
+cp "$CHIP_ROOT" $OUT_DEST_PATH/
+cp "$ROOT_DIR/InPi/unpack.sh" $OUT_DEST_PATH/
+cp "$ROOT_DIR/InPi/rc.local" $OUT_DEST_PATH/
+cp "$ROOT_DIR/InPi/start-test-harness.sh" $OUT_DEST_PATH/
 
 # compress as zip
 cd "$ROOT_DIR"
