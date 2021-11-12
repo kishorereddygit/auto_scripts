@@ -21,8 +21,8 @@ CHIP_ROOT=$(realpath $(dirname "$0")/chip-certification-tool/backend/third_party
 #Get Chip-tool
 git clone git@github.com:CHIP-Specifications/chip-certification-tool.git
 cd chip-certification-tool
-git checkout develop
 git submodule update --init --recursive
+git checkout develop
 # cd "$CHIP_ROOT"
 # source ./scripts/bootstrap.sh
 pip3 install git-archive-all
