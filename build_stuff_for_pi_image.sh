@@ -103,6 +103,14 @@ mv "$PYTHON_LIB_OUT" $OUT_DEST_PATH/
 cd "$CERT_TOOL_ROOT"
 git archive-all -v "$OUT_DEST_PATH/chip-certification-tool.tar.gz"
 
+# Deleting Uneeded Files
+cd "$CHIP_ROOT"
+rm -rf zzz_generated
+rm -rf third_party
+rm -rf integrations
+rm -rf config
+rm -rf credentials
+
 # Archiving the repo
 tar -czvf connectedhomeip.tar.gz $CHIP_ROOT
 
