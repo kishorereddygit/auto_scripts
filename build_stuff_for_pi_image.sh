@@ -103,8 +103,11 @@ mv "$PYTHON_LIB_OUT" $OUT_DEST_PATH/
 cd "$CERT_TOOL_ROOT"
 git archive-all -v "$OUT_DEST_PATH/chip-certification-tool.tar.gz"
 
+# Archiving the repo
+tar -czvf connectedhomeip.tar.gz $CHIP_ROOT
+
 # Copy helper scripts
-cp -r $CHIP_ROOT $OUT_DEST_PATH/
+cp -r connectedhomeip.tar.gz $OUT_DEST_PATH/
 cp "$ROOT_DIR/InPi/unpack.sh" $OUT_DEST_PATH/
 cp "$ROOT_DIR/InPi/rc.local" $OUT_DEST_PATH/
 cp "$ROOT_DIR/InPi/start-test-harness.sh" $OUT_DEST_PATH/
