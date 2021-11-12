@@ -20,6 +20,7 @@ PYTHON_OUT_DIR="$SDK_DIR/out"
 CERT_TOOL_DIR="$HOME/chip-certification-tool"
 APPS="$HOME/apps"
 
+mkdir $APPS
 #install Dependencies
 sudo apt update -y
 sudo apt upgrade -y
@@ -52,7 +53,6 @@ docker run hello-world
 docker --version
 
 # Move chip binaries to home
-mkdir apps
 mv "$ROOT_DIR/chip-tool" "$APPS/" 
 mv "$ROOT_DIR/chip-tool-ipv6only" "$APPS/"
 mv "$ROOT_DIR/chip-all-clusters-app" "$APPS/" 
