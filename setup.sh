@@ -23,6 +23,9 @@ git clone git@github.com:CHIP-Specifications/chip-certification-tool.git
 cd chip-certification-tool
 git checkout develop
 git submodule update --init --recursive
+cd backend
+git checkout develop
+git submodule update --init --recursive
 # cd "$CHIP_ROOT"
 # source ./scripts/bootstrap.sh
 pip3 install git-archive-all
