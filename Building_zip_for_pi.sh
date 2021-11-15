@@ -110,5 +110,5 @@ cp "$ROOT_DIR/InPi/start-test-harness.sh" $OUT_DEST_PATH/
 
 # compress as zip
 cd "$ROOT_DIR"
-zip send_to_pi.zip -r send_to_pi
+zip To_pi.zip -r To_pi
 rm -rf "$OUT_DEST_PATH"
