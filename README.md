@@ -1,7 +1,7 @@
 # Build components for CSG Pi image
 
 # Setup
-Run `./Installdeps.sh` this will install all required dependencies                         
+Run `./Install_Dependencies.sh` this will install all required dependencies                         
 Run `./setup.sh` this will pull all the source and install dependencies                                                
 Make sure the `chip-certification-tool` project is updated with the latest changes (eg chip-tool)
 
