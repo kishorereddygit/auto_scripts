@@ -92,7 +92,6 @@ TV_CASTING_EXEC_PATH="$TV_CASTING_ROOT/out/host"
 "$CHIP_ROOT/scripts/examples/gn_build_example.sh" "$TV_CASTING_ROOT" "$TV_CASTING_EXEC_PATH"
 mv $TV_CASTING_EXEC_PATH/chip-tv-casting-app $OUT_DEST_PATH
 
-# Build python-dev-controller
 "$CHIP_ROOT/scripts/build_python.sh" --chip_detail_logging true --chip_mdns platform
 PYTHON_ENV_OUT="$CHIP_ROOT/out/python_env"
 mv "$PYTHON_ENV_OUT" $OUT_DEST_PATH/
@@ -104,11 +103,11 @@ cd "$CERT_TOOL_ROOT"
 git archive-all -v "$OUT_DEST_PATH/chip-certification-tool.tar.gz"
 
 # Copy helper scripts
-cp "$ROOT_DIR/InPi/unpack.sh" $OUT_DEST_PATH/
-cp "$ROOT_DIR/InPi/rc.local" $OUT_DEST_PATH/
-cp "$ROOT_DIR/InPi/start-test-harness.sh" $OUT_DEST_PATH/
+cp "$ROOT_DIR/On_to_pi/Unpack_in_pi.sh" $OUT_DEST_PATH/
+cp "$ROOT_DIR/On_to_pi/rc.local" $OUT_DEST_PATH/
+cp "$ROOT_DIR/On_to_pi/start-test-harness.sh" $OUT_DEST_PATH/
 
 # compress as zip
 cd "$ROOT_DIR"
-zip To_pi.zip -r To_pi
+zip send_to_pi.zip -r send_to_pi
 rm -rf "$OUT_DEST_PATH"
