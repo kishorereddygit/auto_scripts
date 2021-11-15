@@ -37,8 +37,8 @@ mv "$ROOT_DIR/chip-tv-casting-app" "$APPS/"
 # move and install python-dev-controller
 rm -rf "$SDK_DIR" # delete old stuff
 mkdir -p "$SDK_DIR/out"
-mv "$ROOT_DIR/python_env" "$APPS/"
-mv "$ROOT_DIR/python_lib" "$APPS/"
+mv "$ROOT_DIR/python_env" "$PYTHON_OUT_DIR/"
+mv "$ROOT_DIR/python_lib" "$PYTHON_OUT_DIR/"
 pip3 install --upgrade --force-reinstall --no-cache-dir "$PYTHON_OUT_DIR/python_lib/controller/python/chip-0.0-cp37-abi3-linux_aarch64.whl"
 
 # Unpack cert tool
