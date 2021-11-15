@@ -22,7 +22,7 @@ set -e
 ROOT_DIR=$(realpath $(dirname "$0"))
 CERT_TOOL_ROOT="$ROOT_DIR/chip-certification-tool"
 CHIP_ROOT="$CERT_TOOL_ROOT/backend/third_party/connectedhomeip/repo"
-OUT_DEST_PATH="$ROOT_DIR/send_to_pi"
+OUT_DEST_PATH="$ROOT_DIR/To_pi"
 
 # Setup environment
 source "$CHIP_ROOT/scripts/activate.sh"
