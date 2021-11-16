@@ -31,7 +31,7 @@ mv "$ROOT_DIR/chip-ota-provider-app" "$APPS/"
 mv "$ROOT_DIR/chip-ota-requestor-app" "$APPS/"
 mv "$ROOT_DIR/chip-tv-app" "$APPS/"
 mv "$ROOT_DIR/chip-tv-casting-app" "$APPS/"
-mv apps ~
+mv "$APPS" "$ROOT_DIR"
 
 # move and install python-dev-controller
 rm -rf "$SDK_DIR" # delete old stuff
