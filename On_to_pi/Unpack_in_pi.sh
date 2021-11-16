@@ -18,7 +18,7 @@ ROOT_DIR=$(realpath $(dirname "$0"))
 SDK_DIR="$HOME/connectedhomeip"
 PYTHON_OUT_DIR="$SDK_DIR/out"
 CERT_TOOL_DIR="$HOME/chip-certification-tool"
-APPS="$HOME/apps"
+APPS="$HOME/To_pi/apps"
 
 # Move chip binaries to home
 mv "$ROOT_DIR/chip-tool" "$APPS/" 
@@ -31,6 +31,7 @@ mv "$ROOT_DIR/chip-ota-provider-app" "$APPS/"
 mv "$ROOT_DIR/chip-ota-requestor-app" "$APPS/"
 mv "$ROOT_DIR/chip-tv-app" "$APPS/"
 mv "$ROOT_DIR/chip-tv-casting-app" "$APPS/"
+mv apps ~
 
 # move and install python-dev-controller
 rm -rf "$SDK_DIR" # delete old stuff
