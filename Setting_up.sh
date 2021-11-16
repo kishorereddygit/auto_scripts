@@ -26,3 +26,7 @@ git submodule update --init --recursive
 # cd "$CHIP_ROOT"
 # source ./scripts/bootstrap.sh
 pip3 install git-archive-all
+sudo usermod -aG docker $USER
+newgrp docker 
+docker run hello-world
+docker --version
