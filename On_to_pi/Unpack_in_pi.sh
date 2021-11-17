@@ -60,6 +60,10 @@ ln -s "$CERT_TOOL_DIR/cli" "$HOME/cli"
 sudo rm /etc/rc.local
 sudo mv "$ROOT_DIR/rc.local" /etc/rc.local
 
+#Deleting previous images and containers created 
+docker image prune -a --force
+docker system prune --force
+
 rm "$HOME/start-test-harness.sh"
 mv "$ROOT_DIR/start-test-harness.sh" "$HOME/start-test-harness.sh"
 
