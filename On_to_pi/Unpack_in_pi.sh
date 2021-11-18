@@ -40,6 +40,10 @@ mv "$ROOT_DIR/python_env" "$PYTHON_OUT_DIR/"
 mv "$ROOT_DIR/python_lib" "$PYTHON_OUT_DIR/"
 pip3 install --upgrade --force-reinstall --no-cache-dir "$PYTHON_OUT_DIR/python_lib/controller/python/chip-0.0-cp37-abi3-linux_aarch64.whl"
 
+#Deleting previous images and containers created 
+docker image prune -a --force
+docker system prune --force
+
 # Unpack cert tool
 sudo rm -rf "$CERT_TOOL_DIR"
 tar -xvf "$ROOT_DIR/chip-certification-tool.tar.gz" -C "$HOME"
@@ -59,10 +63,6 @@ ln -s "$CERT_TOOL_DIR/cli" "$HOME/cli"
 # Copy scripts for auto-start
 sudo rm /etc/rc.local
 sudo mv "$ROOT_DIR/rc.local" /etc/rc.local
-
-#Deleting previous images and containers created 
-docker image prune -a --force
-docker system prune --force
 
 rm "$HOME/start-test-harness.sh"
 mv "$ROOT_DIR/start-test-harness.sh" "$HOME/start-test-harness.sh"
