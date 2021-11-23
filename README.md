@@ -3,7 +3,7 @@
 # On the current pi: 
 
 # Setup
-Run `./MoveFiles.sh` this will move all the files to the root.
+Run `./MoveFiles.sh` this will move all the files to the root.  
 Run `./Install_Dependencies.sh` this will install all required dependencies.                         
 Run `./Setting_up.sh` this will pull all the source and install dependencies.                                               
 Make sure the `chip-certification-tool` project is updated with the latest changes (eg chip-tool).
