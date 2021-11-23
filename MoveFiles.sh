@@ -21,4 +21,3 @@ mv DDCommand.sh ~
 mv Install_Dependencies.sh ~
 mv Setting_up.sh ~
 mv On_to_pi ~
-cd ..
