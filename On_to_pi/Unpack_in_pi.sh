@@ -18,7 +18,7 @@ ROOT_DIR=$(realpath $(dirname "$0"))
 SDK_DIR="$HOME/connectedhomeip"
 PYTHON_OUT_DIR="$SDK_DIR/out"
 CERT_TOOL_DIR="$HOME/chip-certification-tool"
-APPS="$HOME/To_pi/apps"
+APPS="$HOME/apps"
 
 # Move chip binaries to home
 mv "$ROOT_DIR/chip-tool" "$APPS/" 
@@ -66,8 +66,6 @@ sudo mv "$ROOT_DIR/rc.local" /etc/rc.local
 
 rm "$HOME/start-test-harness.sh"
 mv "$ROOT_DIR/start-test-harness.sh" "$HOME/start-test-harness.sh"
-
-mv To_Pi Apps
 
 # Stop and build new docker images for test harness
 cd "$CERT_TOOL_DIR"
