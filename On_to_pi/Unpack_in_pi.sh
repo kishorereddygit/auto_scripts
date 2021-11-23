@@ -67,6 +67,8 @@ sudo mv "$ROOT_DIR/rc.local" /etc/rc.local
 rm "$HOME/start-test-harness.sh"
 mv "$ROOT_DIR/start-test-harness.sh" "$HOME/start-test-harness.sh"
 
+mv To_Pi Apps
+
 # Stop and build new docker images for test harness
 cd "$CERT_TOOL_DIR"
 docker-compose down
