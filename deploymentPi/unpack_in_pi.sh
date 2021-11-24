@@ -20,8 +20,6 @@ PYTHON_OUT_DIR="$SDK_DIR/out"
 CERT_TOOL_DIR="$HOME/chip-certification-tool"
 APPS="$HOME/apps"
 
-bash ./artifact/movetoroot.sh
-
 # Move chip binaries to home
 mv "$ROOT_DIR/chip-tool" "$APPS/" 
 mv "$ROOT_DIR/chip-tool-ipv6only" "$APPS/"

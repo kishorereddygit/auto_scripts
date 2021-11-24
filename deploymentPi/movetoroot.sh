@@ -15,10 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-mv DDCommand.sh ~
 mv Unpack_in_pi.sh	~
-mv rc.local ~    
-mv start-test-harness.sh ~
 mv Install_Dependencies.sh ~  
 
 #MovingApps to Different Directory

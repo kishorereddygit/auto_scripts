@@ -12,3 +12,7 @@ Unzip with `unzip To_pi.zip`.
 Use `./movetoroot.sh` to move all files to root, and apps to a new directory.  
 Run `./install_dependencies.sh` this will install all required dependencies.  
 Run `./unpack_in_pi.sh` on the Raspberry Pi, this will remove old content and replace it with the new.
+
+# Prepare a Linux machine for image making
+Run `./dcfldd_command.sh` on a linux machine having the sd of the deployment pi.
+Note: The linux machine must have more free space than the size of the sd card being used.
