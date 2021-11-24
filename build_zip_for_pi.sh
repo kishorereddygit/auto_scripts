@@ -105,10 +105,9 @@ cd "$CERT_TOOL_ROOT"
 git-archive-all -v "$OUT_DEST_PATH/chip-certification-tool.tar.gz"
 
 # Copy helper scripts
-
-
-cp "$ROOT_DIR/Install_Dependencies.sh" $OUT_DEST_PATH/
-cp "$ROOT_DIR/on_to_pi" $OUT_DEST_PATH/
+cp "$ROOT_DIR/install_dependencies.sh" $OUT_DEST_PATH/
+cp "$ROOT_DIR/on_to_pi/artifact" $OUT_DEST_PATH/
+cp "$ROOT_DIR/on_to_pi/unpack_in_pi.sh" $OUT_DEST_PATH/
 
 # compress as zip
 cd "$ROOT_DIR"
