@@ -14,6 +14,6 @@ Copy or scp `To_pi.zip` to the target Raspberry Pi.
 # On the new pi:
  
 Unzip with `unzip To_pi.zip`.  
-Use `./Movetoroot.sh` to move all your files to the root folder.  
+Use `./movetoroot.sh` to move all files to root, and apps to a new directory.  
 Run `./install_dependencies.sh` this will install all required dependencies.  
 Run `unpack_in_pi.sh` on the Raspberry Pi, this will remove old content and replace it with the new.
