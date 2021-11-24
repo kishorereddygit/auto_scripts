@@ -17,19 +17,21 @@
 
 mv DDCommand.sh ~
 mv Unpack_in_pi.sh	~
-mv chip-bridge-app ~/apps		
-mv chip-lighting-app ~/apps      
-mv chip-ota-requestor-app ~/apps  
-mv chip-tool-ipv6only ~/apps  
-mv chip-tv-casting-app ~/apps	
-mv python_lib ~/apps  
+mv rc.local ~    
 mv start-test-harness.sh ~
 mv Install_Dependencies.sh ~  
+
+#MovingApps to Different Directory
 mv chip-all-clusters-app ~/apps	
 mv chip-certification-tool.tar.gz ~	
 mv chip-ota-provider-app ~/apps  
 mv chip-tool ~/apps	       
 mv chip-tv-app ~/apps	   
-mv python_env ~/apps		
-mv rc.local ~   
+mv python_env ~/apps
+mv chip-bridge-app ~/apps		
+mv chip-lighting-app ~/apps      
+mv chip-ota-requestor-app ~/apps  
+mv chip-tool-ipv6only ~/apps  
+mv chip-tv-casting-app ~/apps	
+mv python_lib ~/apps 
 mv thermostat-app ~/apps
