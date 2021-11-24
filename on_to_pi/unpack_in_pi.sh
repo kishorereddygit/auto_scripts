@@ -20,6 +20,8 @@ PYTHON_OUT_DIR="$SDK_DIR/out"
 CERT_TOOL_DIR="$HOME/chip-certification-tool"
 APPS="$HOME/apps"
 
+bash ./artifact/movetoroot.sh
+
 # Move chip binaries to home
 mv "$ROOT_DIR/chip-tool" "$APPS/" 
 mv "$ROOT_DIR/chip-tool-ipv6only" "$APPS/"
@@ -62,10 +64,10 @@ ln -s "$CERT_TOOL_DIR/cli" "$HOME/cli"
 
 # Copy scripts for auto-start
 sudo rm /etc/rc.local
-sudo mv "$ROOT_DIR/rc.local" /etc/rc.local
+sudo mv "$ROOT_DIR/artifact/rc.local" /etc/rc.local
 
 rm "$HOME/start-test-harness.sh"
-mv "$ROOT_DIR/start-test-harness.sh" "$HOME/start-test-harness.sh"
+mv "$ROOT_DIR/artifact/start-test-harness.sh" "$HOME/start-test-harness.sh"
 
 # Stop and build new docker images for test harness
 cd "$CERT_TOOL_DIR"
