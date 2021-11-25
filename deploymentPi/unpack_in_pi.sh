@@ -62,3 +62,7 @@ docker-compose down
 # Build backend managed dockers
 cd "$CERT_TOOL_DIR/backend"
 ./scripts/build_managed_docker_images.sh
+
+#To run Docker on boot
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
