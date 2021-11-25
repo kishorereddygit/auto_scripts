@@ -16,6 +16,10 @@
 # limitations under the License.
 cd ..
 mkdir apps
+mkdir connectedhomeip
+cd connectedhomeip
+mkdir out
+cd ..
 cd To_pi
 mv unpack_in_pi.sh ~
 mv install_dependencies.sh ~
@@ -25,13 +29,13 @@ mv chip-all-clusters-app ~/apps
 mv chip-ota-provider-app ~/apps
 mv chip-tool ~/apps
 mv chip-tv-app ~/apps
-mv python_env ~/apps
+mv python_env ~/connectedhomeip/out
 mv chip-bridge-app ~/apps
 mv chip-lighting-app ~/apps
 mv chip-ota-requestor-app ~/apps
 mv chip-tool-ipv6only ~/apps
 mv chip-tv-casting-app ~/apps
-mv python_lib ~/apps
+mv python_lib ~/connectedhomeip/out
 mv thermostat-app ~/apps
 mv chip-certification-tool.tar.gz ~
 cd ..
