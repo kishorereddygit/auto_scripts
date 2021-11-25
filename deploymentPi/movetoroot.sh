@@ -33,3 +33,6 @@ mv chip-tool-ipv6only ~/apps
 mv chip-tv-casting-app ~/apps
 mv python_lib ~/apps
 mv thermostat-app ~/apps
+mv chip-certification-tool.tar.gz ~
+cd ..
+rm -rf To_pi
