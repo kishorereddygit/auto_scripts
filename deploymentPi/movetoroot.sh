@@ -22,7 +22,6 @@ mv install_dependencies.sh ~
 mv artifact/ ~
 #MovingApps to Different Directory
 mv chip-all-clusters-app ~/apps
-mv chip-certification-tool.tar.gz ~
 mv chip-ota-provider-app ~/apps
 mv chip-tool ~/apps
 mv chip-tv-app ~/apps
