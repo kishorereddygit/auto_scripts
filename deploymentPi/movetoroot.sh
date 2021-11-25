@@ -16,10 +16,6 @@
 # limitations under the License.
 cd ..
 mkdir apps
-mkdir connectedhomeip
-cd connectedhomeip
-mkdir out
-cd ..
 cd To_pi
 mv unpack_in_pi.sh ~
 mv install_dependencies.sh ~
