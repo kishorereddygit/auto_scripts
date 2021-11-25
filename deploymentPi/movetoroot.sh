@@ -36,3 +36,4 @@ mv thermostat-app ~/apps
 mv chip-certification-tool.tar.gz ~
 cd ..
 rm -rf To_pi
+cd ..
