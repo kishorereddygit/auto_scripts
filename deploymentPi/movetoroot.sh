@@ -25,13 +25,13 @@ mv chip-all-clusters-app ~/apps
 mv chip-ota-provider-app ~/apps
 mv chip-tool ~/apps
 mv chip-tv-app ~/apps
-mv python_env ~/connectedhomeip/out
+mv python_env ~
 mv chip-bridge-app ~/apps
 mv chip-lighting-app ~/apps
 mv chip-ota-requestor-app ~/apps
 mv chip-tool-ipv6only ~/apps
 mv chip-tv-casting-app ~/apps
-mv python_lib ~/connectedhomeip/out
+mv python_lib ~
 mv thermostat-app ~/apps
 mv chip-certification-tool.tar.gz ~
 cd ..
