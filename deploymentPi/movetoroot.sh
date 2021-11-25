@@ -14,21 +14,22 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-mv Unpack_in_pi.sh	~
-mv Install_Dependencies.sh ~  
-
+cd ..
+mkdir apps
+cd To_pi
+mv unpack_in_pi.sh ~
+mv install_dependencies.sh ~
 #MovingApps to Different Directory
-mv chip-all-clusters-app ~/apps	
-mv chip-certification-tool.tar.gz ~	
-mv chip-ota-provider-app ~/apps  
-mv chip-tool ~/apps	       
-mv chip-tv-app ~/apps	   
+mv chip-all-clusters-app ~/apps
+mv chip-certification-tool.tar.gz ~
+mv chip-ota-provider-app ~/apps
+mv chip-tool ~/apps
+mv chip-tv-app ~/apps
 mv python_env ~/apps
-mv chip-bridge-app ~/apps		
-mv chip-lighting-app ~/apps      
-mv chip-ota-requestor-app ~/apps  
-mv chip-tool-ipv6only ~/apps  
-mv chip-tv-casting-app ~/apps	
-mv python_lib ~/apps 
+mv chip-bridge-app ~/apps
+mv chip-lighting-app ~/apps
+mv chip-ota-requestor-app ~/apps
+mv chip-tool-ipv6only ~/apps
+mv chip-tv-casting-app ~/apps
+mv python_lib ~/apps
 mv thermostat-app ~/apps
