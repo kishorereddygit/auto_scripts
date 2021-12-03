@@ -1,0 +1,2 @@
+mv buildPi ~
+mv deploymentPi ~
