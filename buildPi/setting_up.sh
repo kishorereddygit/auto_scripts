@@ -19,30 +19,20 @@ ROOT_DIR=$(realpath $(dirname "$0")/..)
 CHIP_ROOT=$(realpath $(dirname "$0")/chip-certification-tool/backend/third_party/connectedhomeip/repo)
 
 #Edit the comit or specific branch Needed
-connectedhomeip=""
-frontend=""
-backend=""
-main="master"
-#Get Chip-tool
 git clone git@github.com:CHIP-Specifications/chip-certification-tool.git
 git submodule update --init --recursive
 cd chip-certification-tool
-git checkout $main
-if [ $backend != "" ]
-then
+
 cd backend
-git checkout $backend
-fi
-if [ $connectedhomeip != "" ]
-then
+git checkout develop
+
 cd third_party/connectedhomeip/repo
-git checkout $connectedhomeip
-fi
-if [ $frontend != "" ]
-then
+git checkout develop
+
+cd ../../../..
 cd frontend
-git checkout $frontend
-fi
+git checkout develop
+
 # cd "$CHIP_ROOT"
 # source ./scripts/bootstrap.sh
 pip3 install git-archive-all
