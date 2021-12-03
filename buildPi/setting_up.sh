@@ -24,7 +24,8 @@ backend="develop"
 main="develop"
 #Get Chip-tool
 git clone git@github.com:CHIP-Specifications/chip-certification-tool.git
-git submodule update --init --recursive
+git submodule init
+git submodule update
 
 cd chip-certification-tool
 
