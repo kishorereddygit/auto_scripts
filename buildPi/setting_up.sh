@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 #
 # Copyright (c) 2021 Project CHIP Authors
 #
@@ -19,20 +18,42 @@ ROOT_DIR=$(realpath $(dirname "$0")/..)
 CHIP_ROOT=$(realpath $(dirname "$0")/chip-certification-tool/backend/third_party/connectedhomeip/repo)
 
 #Edit the comit or specific branch Needed
+connectedhomeip=""
+frontend=""
+backend=""
+main="master"
+while getopts m:b:f:c: flag
+do
+	case "${flag}" in
+		m) main=${OPTARG};;
+		b) backend=${OPTARG};;		
+		f) frontend=${OPTARG};;
+		c) connectedhomeip=${OPTARG};;		
+		\?) echo "Invalid option -$OPTARG" >&2
+		    exit 1
+		    ;;
+	esac
+done
+#Get Chip-tool
 git clone git@github.com:CHIP-Specifications/chip-certification-tool.git
-git submodule update --init --recursive
 cd chip-certification-tool
-
+git checkout $main
+if [ $backend != "" ]
+then
 cd backend
-git checkout develop
-
+git checkout $backend
+fi
+if [ $connectedhomeip != "" ]
+then
 cd third_party/connectedhomeip/repo
-git checkout develop
-
-cd ../../../..
+git checkout $connectedhomeip
+fi
+if [ $frontend != "" ]
+then
 cd frontend
-git checkout develop
-
+git checkout $frontend
+fi
+git submodule update --init --recursive
 # cd "$CHIP_ROOT"
 # source ./scripts/bootstrap.sh
 pip3 install git-archive-all
