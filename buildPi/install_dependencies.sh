@@ -14,6 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+cd ../../
+mv buildPi ~
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt-get install git gcc g++ python pkg-config libssl-dev libdbus-1-dev \
