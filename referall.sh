@@ -1,3 +1,4 @@
+!/bin/bash
 mv buildPi ~
 cd ..
 cd buildPi
