@@ -67,3 +67,7 @@ cd "$CERT_TOOL_DIR/backend"
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
 
+#Start the docker service
+cd "$CERT_TOOL_DIR"
+docker-compose up -d
+
