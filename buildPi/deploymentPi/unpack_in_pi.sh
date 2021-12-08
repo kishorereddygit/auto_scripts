@@ -66,3 +66,4 @@ cd "$CERT_TOOL_DIR/backend"
 #To run Docker on boot
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
+
