@@ -20,6 +20,7 @@ cd To_pi
 mv unpack_in_pi.sh ~
 mv install_dependencies.sh ~
 mv artifact/ ~
+mv READme.md/ ~
 #MovingApps to Different Directory
 mv chip-all-clusters-app ~/apps
 mv chip-ota-provider-app ~/apps
