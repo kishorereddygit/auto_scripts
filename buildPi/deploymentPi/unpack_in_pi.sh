@@ -70,3 +70,8 @@ sudo systemctl enable containerd.service
 #Start the docker service
 cd "$CERT_TOOL_DIR"
 docker-compose up -d
+
+#Delete bloat files
+cd "$ROOT_DIR"
+rm install_dependencies.sh
+rm unpack_in_pi.sh
