@@ -16,6 +16,7 @@
 
 cd ../
 mv buildPi ~
+mv README.md ~
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt-get install git gcc g++ python pkg-config libssl-dev libdbus-1-dev \
