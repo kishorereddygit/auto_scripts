@@ -54,10 +54,10 @@ sudo rm /etc/rc.local
 sudo mv "$ROOT_DIR/artifact/rc.local" /etc/rc.local
 
 #Scripts for starting docker automatically on boot
-sudo mv "$ROOT_DIR/artifact/rc.local.service" /etc/systemd/system/rc-local.service
-sudo chmod +x /etc/rc.local
-sudo systemctl enable rc-local
-sudo systemctl start rc-local.service
+#sudo mv "$ROOT_DIR/artifact/rc.local.service" /etc/systemd/system/rc-local.service
+#sudo chmod +x /etc/rc.local
+#sudo systemctl enable rc-local
+#sudo systemctl start rc-local.service
 
 rm "$HOME/start-test-harness.sh"
 mv "$ROOT_DIR/artifact/start-test-harness.sh" "$HOME/start-test-harness.sh"
