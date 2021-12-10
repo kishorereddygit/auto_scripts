@@ -24,9 +24,9 @@ LOCAL="$HOME/etc/systemd/system"
 # move and install python-dev-controller
 rm -rf "$SDK_DIR" # delete old stuff
 mv repo connectedhomeip
-mkdir -p "$SDK_DIR/out"
-mv "$ROOT_DIR/python_env" "$PYTHON_OUT_DIR/"
-mv "$ROOT_DIR/python_lib" "$PYTHON_OUT_DIR/"
+#mkdir -p "$SDK_DIR/out"
+#mv "$ROOT_DIR/python_env" "$PYTHON_OUT_DIR/"
+#mv "$ROOT_DIR/python_lib" "$PYTHON_OUT_DIR/"
 pip3 install --upgrade --force-reinstall --no-cache-dir "$PYTHON_OUT_DIR/python_lib/controller/python/chip-0.0-cp37-abi3-linux_aarch64.whl"
 
 #Deleting previous images and containers created 
