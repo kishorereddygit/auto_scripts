@@ -19,6 +19,7 @@ SDK_DIR="$HOME/connectedhomeip"
 PYTHON_OUT_DIR="$SDK_DIR/out"
 CERT_TOOL_DIR="$HOME/chip-certification-tool"
 APPS="$HOME/apps"
+LOCAL="$HOME/etc/systemd/system"
 
 # move and install python-dev-controller
 rm -rf "$SDK_DIR" # delete old stuff
@@ -51,6 +52,12 @@ ln -s "$CERT_TOOL_DIR/cli" "$HOME/cli"
 sudo rm /etc/rc.local
 sudo mv "$ROOT_DIR/artifact/rc.local" /etc/rc.local
 
+#Scripts for starting docker automatically on boot
+sudo mv "$ROOT_DIR/artifact/rc.local.service" /etc/systemd/system/rc-local.service
+sudo chmod +x /etc/rc.local
+sudo systemctl enable rc-local
+sudo systemctl start rc-local.service
+
 rm "$HOME/start-test-harness.sh"
 mv "$ROOT_DIR/artifact/start-test-harness.sh" "$HOME/start-test-harness.sh"
 
@@ -62,10 +69,6 @@ docker-compose down
 # Build backend managed dockers
 cd "$CERT_TOOL_DIR/backend"
 ./scripts/build_managed_docker_images.sh
-
-#To run Docker on boot
-sudo systemctl enable docker.service
-sudo systemctl enable containerd.service
 
 #Start the docker service
 cd "$CERT_TOOL_DIR"
