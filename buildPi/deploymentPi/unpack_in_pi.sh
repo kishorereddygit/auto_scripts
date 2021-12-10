@@ -23,6 +23,7 @@ LOCAL="$HOME/etc/systemd/system"
 
 # move and install python-dev-controller
 rm -rf "$SDK_DIR" # delete old stuff
+mv repo connectedhomeip
 mkdir -p "$SDK_DIR/out"
 mv "$ROOT_DIR/python_env" "$PYTHON_OUT_DIR/"
 mv "$ROOT_DIR/python_lib" "$PYTHON_OUT_DIR/"
