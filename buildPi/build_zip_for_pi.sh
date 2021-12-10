@@ -103,10 +103,10 @@ cd "$CERT_TOOL_ROOT"
 git-archive-all -v "$OUT_DEST_PATH/chip-certification-tool.tar.gz"
 
 #Deleteing Bloat
-cd "$CERT_ROOT"
-rm -rf config/
-rm -rf zzz_generated/
-rm -rf third_party/
+#cd "$CERT_ROOT"
+#rm -rf config/
+#rm -rf zzz_generated/
+#rm -rf third_party/
 
 # Copy helper scripts
 cp -r "$ROOT_DIR/READme.md" $OUT_DEST_PATH/
@@ -114,7 +114,7 @@ cp -r "$ROOT_DIR/install_dependencies.sh" $OUT_DEST_PATH/
 cp -r "$ROOT_DIR/deploymentPi/artifact" $OUT_DEST_PATH/
 cp -r "$ROOT_DIR/deploymentPi/unpack_in_pi.sh" $OUT_DEST_PATH/
 cp -r "$ROOT_DIR/deploymentPi/movetoroot.sh" $OUT_DEST_PATH/
-cp -r "$CHIP_ROOT" $OUT_DEST_PATH/
+#cp -r "$CHIP_ROOT" $OUT_DEST_PATH/
 
 # compress as zip
 cd "$ROOT_DIR"
