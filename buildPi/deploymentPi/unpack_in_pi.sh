@@ -23,10 +23,10 @@ LOCAL="$HOME/etc/systemd/system"
 
 # move and install python-dev-controller
 rm -rf "$SDK_DIR" # delete old stuff
-mv repo connectedhomeip
-#mkdir -p "$SDK_DIR/out"
-#mv "$ROOT_DIR/python_env" "$PYTHON_OUT_DIR/"
-#mv "$ROOT_DIR/python_lib" "$PYTHON_OUT_DIR/"
+#mv repo connectedhomeip
+mkdir -p "$SDK_DIR/out"
+mv "$ROOT_DIR/python_env" "$PYTHON_OUT_DIR/"
+mv "$ROOT_DIR/python_lib" "$PYTHON_OUT_DIR/"
 pip3 install --upgrade --force-reinstall --no-cache-dir "$SDK_DIR/python_lib/controller/python/chip-0.0-cp37-abi3-linux_aarch64.whl"
 
 #Deleting previous images and containers created 
@@ -55,9 +55,9 @@ sudo mv "$ROOT_DIR/artifact/rc.local" /etc/rc.local
 
 #Scripts for starting docker automatically on boot
 #sudo mv "$ROOT_DIR/artifact/rc.local.service" /etc/systemd/system/rc-local.service
-#sudo chmod +x /etc/rc.local
-#sudo systemctl enable rc-local
-#sudo systemctl start rc-local.service
+sudo chmod +x /etc/rc.local
+sudo systemctl enable rc-local
+sudo systemctl start rc-local.service
 
 rm "$HOME/start-test-harness.sh"
 mv "$ROOT_DIR/artifact/start-test-harness.sh" "$HOME/start-test-harness.sh"
