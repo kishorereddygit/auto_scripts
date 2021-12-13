@@ -23,7 +23,7 @@ frontend="new-ui/main"
 backend="develop"
 main="develop"
 #Get Chip-tool
-git clone git@github.com:CHIP-Specifications/chip-certification-tool.git
+git clone --recursive git@github.com:CHIP-Specifications/chip-certification-tool.git
 cd chip-certification-tool
 git submodule update --init --recursive
 
