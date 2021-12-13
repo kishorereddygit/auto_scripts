@@ -20,7 +20,7 @@ set -e
 
 
 ROOT_DIR=$(realpath $(dirname "$0"))
-CERT_TOOL_ROOT="$ROOT_DIR/chip-certification-tool"
+CERT_TOOL_ROOT="$CERT_TOOL_ROOT/backend/third_party/connectedhomeip/repo"
 CHIP_ROOT="$ROOT_DIR/connectedhomeip"
 OUT_DEST_PATH="$ROOT_DIR/To_pi"
 
