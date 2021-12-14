@@ -50,4 +50,4 @@ git submodule update --init --recursive
 
 cd "$CHIP_ROOT"
 source ./scripts/bootstrap.sh
-pip3 install git-archive-all
+sudo pip3 install git-archive-all
