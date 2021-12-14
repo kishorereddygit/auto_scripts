@@ -32,16 +32,19 @@ if [ $backend != "" ]
 then
 cd backend
 git checkout $backend
+git pull
 fi
 if [ $connectedhomeip != "" ]
 then
 cd third_party/connectedhomeip/repo
 git checkout $connectedhomeip
+git pull
 fi
 if [ $frontend != "" ]
 then
 cd ../../../../frontend
 git checkout $frontend
+git pull
 fi
 # cd "$CHIP_ROOT"
 # source ./scripts/bootstrap.sh
