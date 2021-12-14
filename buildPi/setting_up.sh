@@ -25,7 +25,6 @@ main="develop"
 #Get Chip-tool
 git clone --recursive git@github.com:CHIP-Specifications/chip-certification-tool.git
 cd chip-certification-tool
-git submodule update --init --recursive
 
 git checkout $main
 if [ $backend != "" ]
@@ -46,6 +45,9 @@ cd ../../../../frontend
 git checkout $frontend
 git pull
 fi
-# cd "$CHIP_ROOT"
-# source ./scripts/bootstrap.sh
+
+git submodule update --init --recursive
+
+cd "$CHIP_ROOT"
+source ./scripts/bootstrap.sh
 pip3 install git-archive-all
