@@ -25,6 +25,7 @@ CHIP_ROOT="$CERT_TOOL_ROOT/backend/third_party/connectedhomeip/repo"
 OUT_DEST_PATH="$ROOT_DIR/To_pi"
 
 # Setup environment
+source "$CHIP_ROOT/scripts/bootstrap.sh"
 source "$CHIP_ROOT/scripts/activate.sh"
 
 # Create Output folder
