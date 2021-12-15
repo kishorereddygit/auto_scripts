@@ -1,41 +1,21 @@
 #!/usr/bin/env bash
 
-#
-# Copyright (c) 2021 Project CHIP Authors
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
 ROOT_DIR=$(realpath $(dirname "$0"))
-SDK_DIR="$HOME/connectedhomeip"
-PYTHON_OUT_DIR="$SDK_DIR/out"
+SDK_DIR="$HOME/python"
 CERT_TOOL_DIR="$HOME/chip-certification-tool"
 APPS="$HOME/apps"
 LOCAL="$HOME/etc/systemd/system"
 
 # move and install python-dev-controller
 #rm -rf "$SDK_DIR" # delete old stuff
-mkdir -p "$SDK_DIR/out"
-mv "$ROOT_DIR/python_env" "$PYTHON_OUT_DIR/"
-mv "$ROOT_DIR/python_lib" "$PYTHON_OUT_DIR/"
-pip3 install --upgrade --force-reinstall --no-cache-dir "$PYTHON_OUT_DIR/python_lib/controller/python/chip-0.0-cp37-abi3-linux_aarch64.whl"
+mkdir -p "$SDK_DIR"
+mv "$ROOT_DIR/python_env" "$SDK_DI/"
+mv "$ROOT_DIR/python_lib" "$SDK_DI/"
+pip3 install --upgrade --force-reinstall --no-cache-dir "$SDK_DI/python_lib/controller/python/chip-0.0-cp37-abi3-linux_aarch64.whl"
 
 #Deleting previous images and containers created 
 docker image prune -a --force
 docker system prune --force
-
-# Unpack cert tool
-sudo rm -rf "$CERT_TOOL_DIR"
-tar -xvf "$ROOT_DIR/chip-certification-tool.tar.gz" -C "$HOME"
-rm "$ROOT_DIR/chip-certification-tool.tar.gz"
 
 # Copy tool config
 cp "$CERT_TOOL_DIR/backend/app/tool.config.example" "$CERT_TOOL_DIR/backend/app/tool.config"
