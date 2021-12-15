@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 ROOT_DIR=$(realpath $(dirname "$0"))
 SDK_DIR="$HOME/python"
 CERT_TOOL_DIR="$HOME/chip-certification-tool"
@@ -30,16 +29,7 @@ ln -s "$CERT_TOOL_DIR/cli" "$HOME/cli"
 
 # Copy scripts for auto-start
 sudo rm /etc/rc.local
-sudo mv "$ROOT_DIR/artifact/rc.local" /etc/rc.local
-
-#Scripts for starting docker automatically on boot
-#sudo mv "$ROOT_DIR/artifact/rc.local.service" /etc/systemd/system/rc-local.service
-sudo chmod +x /etc/rc.local
-sudo systemctl enable rc-local
-sudo systemctl start rc-local.service
-
-rm "$HOME/start-test-harness.sh"
-mv "$ROOT_DIR/artifact/start-test-harness.sh" "$HOME/start-test-harness.sh"
+sudo mv "$ROOT_DIR/rc.local" /etc/rc.local
 
 # Stop and build new docker images for test harness
 cd "$CERT_TOOL_DIR"
@@ -53,8 +43,3 @@ cd "$CERT_TOOL_DIR/backend"
 #Start the docker service
 cd "$CERT_TOOL_DIR"
 docker-compose up -d
-
-#Delete bloat files
-cd "$ROOT_DIR"
-rm install_dependencies.sh
-rm unpack_in_pi.sh

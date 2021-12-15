@@ -40,7 +40,3 @@ PYTHON_ENV_OUT="$CHIP_ROOT/out/python_env"
 mv "$PYTHON_ENV_OUT" $OUT_DEST_PATH/
 PYTHON_LIB_OUT="$CHIP_ROOT/out/python_lib"
 mv "$PYTHON_LIB_OUT" $OUT_DEST_PATH/
-
-# Archive Test Harness repo
-cd "$CERT_TOOL_ROOT"
-git-archive-all -v "$OUT_DEST_PATH/chip-certification-tool.tar.gz"

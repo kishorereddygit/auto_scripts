@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 ROOT_DIR=$(realpath $(dirname "$0")/..)
 CHIP_ROOT=$(realpath $(dirname "$0")/chip-certification-tool/backend/third_party/connectedhomeip/repo)
 
