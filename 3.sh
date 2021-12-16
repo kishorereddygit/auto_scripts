@@ -22,6 +22,7 @@ mv $GN_PATH $OUT_DEST_PATH
 
 CHIP_TOOL_ROOT="$CHIP_ROOT/examples/chip-tool"
 CHIP_TOOL_EXEC_PATH="$CHIP_TOOL_ROOT/out/host"
+CHIP_TOOL_IPV6ONLY_EXEC_PATH="$CHIP_TOOL_ROOT/out-ipv6-only/host"
 "$CHIP_ROOT/scripts/examples/gn_build_example.sh" "$CHIP_TOOL_ROOT" "$CHIP_TOOL_IPV6ONLY_EXEC_PATH" 'chip_mdns="platform" chip_inet_config_enable_ipv4=false'
 mv $CHIP_TOOL_IPV6ONLY_EXEC_PATH/chip-tool $OUT_DEST_PATH/chip-tool-ipv6only
 
