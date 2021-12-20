@@ -46,8 +46,7 @@ git checkout $frontend
 git pull
 fi
 
-git submodule update --init --recursive
-
 cd "$CHIP_ROOT"
 source ./scripts/bootstrap.sh
+
 sudo pip3 install git-archive-all
