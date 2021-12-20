@@ -21,31 +21,22 @@ CHIP_ROOT=$(realpath $(dirname "$0")/chip-certification-tool/backend/third_party
 connectedhomeip="7ae1cc9572c0900f0b01a1b84694eb05b70b8179"
 frontend="develop"
 backend="develop"
-main="develop"
 #Get Chip-tool
 git clone --recursive git@github.com:CHIP-Specifications/chip-certification-tool.git
 cd chip-certification-tool
 
-git checkout $main
-if [ $backend != "" ]
-then
-cd backend
 git checkout $backend
 git pull
-fi
-if [ $connectedhomeip != "" ]
-then
+
 cd third_party/connectedhomeip/repo
 git checkout $connectedhomeip
 git pull
-fi
-if [ $frontend != "" ]
-then
+
 cd ../../../../frontend
 git checkout $frontend
 git pull
-fi
 
+cd ../..
 cd "$CHIP_ROOT"
 source ./scripts/bootstrap.sh
 
