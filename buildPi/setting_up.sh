@@ -18,8 +18,8 @@ ROOT_DIR=$(realpath $(dirname "$0")/..)
 CHIP_ROOT=$(realpath $(dirname "$0")/chip-certification-tool/backend/third_party/connectedhomeip/repo)
 
 #Edit the comit or specific branch Needed
-connectedhomeip="master"
-frontend="new-ui/main"
+connectedhomeip="7ae1cc9572c0900f0b01a1b84694eb05b70b8179"
+frontend="develop"
 backend="develop"
 main="develop"
 #Get Chip-tool
