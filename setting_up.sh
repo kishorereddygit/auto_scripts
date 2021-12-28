@@ -11,5 +11,5 @@ echo "Edit these files: sudo nano /etc/systemd/system/dbus-fi.w1.wpa_supplicant1
 echo " and sudo nano /etc/wpa_supplicant/wpa_supplicant.conf and REBOOT "
 cd ~/chip-certification-tool/
 git log
-sudo usermod -aG docker $USER
-newgrp docker
+echo " use sudo usermod -aG docker $USER "
+echo " use newgrp docker "
