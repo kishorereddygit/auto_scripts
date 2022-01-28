@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
-mv building_apps.sh ~
-mv docker_all.sh ~
-mv rc.local ~
-mv setting_up.sh ~
-mv start-test-harness.sh ~
-mv chip-certification-tool ~
+
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt-get install git gcc g++ python pkg-config libssl-dev libdbus-1-dev \
