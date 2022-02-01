@@ -9,7 +9,5 @@ cd third_party/connectedhomeip/repo/
 git checkout master
 echo "Edit these files: sudo nano /etc/systemd/system/dbus-fi.w1.wpa_supplicant1.service "
 echo " and sudo nano /etc/wpa_supplicant/wpa_supplicant.conf and REBOOT "
-cd ~/chip-certification-tool/
-git log
 echo " use sudo usermod -aG docker $USER "
 echo " use newgrp docker "
