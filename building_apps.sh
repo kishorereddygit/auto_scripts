@@ -17,6 +17,8 @@ ln -s ../chip-certification-tool/backend/third_party/connectedhomeip/repo/out/de
 ln -s ../chip-certification-tool/backend/third_party/connectedhomeip/repo/out/debug/standalone/chip-bridge-app bridge-app
 ln -s ../chip-certification-tool/backend/third_party/connectedhomeip/repo/out/debug/standalone/chip-shell shell
 ln -s ../chip-certification-tool/backend/third_party/connectedhomeip/repo/out/debug/standalone/thermostat-app thermostat-app
+ln -s ../chip-certification-tool/backend/third_party/connectedhomeip/repo/examples/ota-requestor-app/linux/out/host/chip-ota-requestor-app ota-requestor-app
+ln -s ../chip-certification-tool/backend/third_party/connectedhomeip/repo/examples/ota-provider-app/linux/out/host/chip-ota-provider-app ota-provider-app
 cd ~
 cp chip-certification-tool/backend/app/tool.config.example chip-certification-tool/backend/app/tool.config
 ln -s chip-certification-tool/backend/app/tool.config test-harness.config
