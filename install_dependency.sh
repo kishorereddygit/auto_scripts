@@ -20,8 +20,9 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o 
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 sudo pip3 install docker-compose
-sudo apt install net-tools
-sudo apt-get install linux-modules-extra-raspi
+sudo apt-get install pi-bluetooth avahi-utils -y
+sudo apt install net-tools -y
+sudo apt-get install linux-modules-extra-raspi -y
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
 echo "REBOOT PI"
 echo "ssh-keygen -o"
