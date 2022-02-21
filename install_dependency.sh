@@ -26,3 +26,5 @@ sudo apt-get install linux-modules-extra-raspi -y
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
 sudo apt install generate-ninja -y
 sudo modprobe ip6table_filter
+sudo usermod -aG docker $USER
+newgrp docker
