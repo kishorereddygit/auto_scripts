@@ -24,6 +24,5 @@ sudo apt-get install pi-bluetooth avahi-utils -y
 sudo apt install net-tools -y
 sudo apt-get install linux-modules-extra-raspi -y
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
-echo "REBOOT PI"
-echo "ssh-keygen -o"
-rm -rf auto_scripts
+sudo apt install generate-ninja -y
+sudo modprobe ip6table_filter
