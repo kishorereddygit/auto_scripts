@@ -6,6 +6,6 @@ cd ..
 cd backend/
 git checkout develop
 cd third_party/connectedhomeip/repo/
-git checkout master
+git checkout 5cbe2931f64e16a44fc843e148325909fbe1511d
 echo "Edit these files: sudo nano /etc/systemd/system/dbus-fi.w1.wpa_supplicant1.service "
 echo " and sudo nano /etc/wpa_supplicant/wpa_supplicant.conf and REBOOT "
