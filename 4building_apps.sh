@@ -32,7 +32,9 @@ cd ~
 ln -s chip-certification-tool/backend/third_party/connectedhomeip/repo connectedhomeip
 sudo cp chip-certification-tool/backend/app/tests/utils/test_environment_config.py  chip-certification-tool/backend/app/tool.config
 ln -s chip-certification-tool/backend/app/tool.config test-harness.config
-ln -s chip-certification-tool/cli cli
 ln -s /etc/netplan/50-cloud-init.yaml network.config
+ln -s chip-certification-tool/cli cli
+cd cli
+source $HOME/.poetry/env && poetry update && poetry install
 sudo mv rc.local /etc/
 echo "Add READme"
