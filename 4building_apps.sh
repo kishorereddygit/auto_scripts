@@ -36,6 +36,7 @@ ln -s /etc/netplan/50-cloud-init.yaml network.config
 ln -s chip-certification-tool/cli cli
 cd cli
 source $HOME/.poetry/env && poetry update && poetry install
+cd ..
 sudo mv rc.local /etc/
 sudo chmod +x /etc/rc.local
 sudo systemctl enable rc-local
