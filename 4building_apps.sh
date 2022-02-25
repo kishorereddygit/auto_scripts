@@ -30,8 +30,9 @@ ln -s ../chip-certification-tool/backend/third_party/connectedhomeip/repo/exampl
 ln -s ../chip-certification-tool/backend/third_party/connectedhomeip/repo/out/door-lock-app/chip-door-lock-app door-lock-app
 cd ~
 ln -s chip-certification-tool/backend/third_party/connectedhomeip/repo connectedhomeip
-cp chip-certification-tool/backend/app/tool.config.example chip-certification-tool/backend/app/tool.config
+sudo cp chip-certification-tool/backend/app/tool.config.example chip-certification-tool/backend/app/tool.config
 ln -s chip-certification-tool/backend/app/tool.config test-harness.config
 ln -s chip-certification-tool/cli cli
 ln -s /etc/netplan/50-cloud-init.yaml network.config
-echo "Add READme, start-test-harness.sh and rc.local"
+sudo mv rc.local /etc/
+echo "Add READme"
