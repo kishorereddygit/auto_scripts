@@ -34,10 +34,9 @@ sudo cp chip-certification-tool/backend/app/tests/utils/test_environment_config.
 ln -s chip-certification-tool/backend/app/tool.config test-harness.config
 ln -s /etc/netplan/50-cloud-init.yaml network.config
 ln -s chip-certification-tool/cli cli
-cd cli
-source $HOME/.poetry/env && poetry update && poetry install
-cd ..
 sudo mv rc.local /etc/
 sudo chmod +x /etc/rc.local
+cd cli
+source $HOME/.poetry/env && poetry update && poetry install
 sudo systemctl enable rc-local
 echo "Add READme"
