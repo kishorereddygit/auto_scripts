@@ -30,13 +30,10 @@ ln -s ../chip-certification-tool/backend/third_party/connectedhomeip/repo/exampl
 ln -s ../chip-certification-tool/backend/third_party/connectedhomeip/repo/out/door-lock-app/chip-door-lock-app door-lock-app
 cd ~
 ln -s chip-certification-tool/backend/third_party/connectedhomeip/repo connectedhomeip
-sudo cp chip-certification-tool/backend/app/tests/utils/test_environment_config.py  chip-certification-tool/backend/app/tool.config
-ln -s chip-certification-tool/backend/app/tool.config test-harness.config
+sudo cp chip-certification-tool/backend/test_environment.config.example  chip-certification-tool/backend/test_environment.config
+ln -s chip-certification-tool/backend/test_environment.config test-harness.config
 ln -s /etc/netplan/50-cloud-init.yaml network.config
 ln -s chip-certification-tool/cli cli
 sudo mv rc.local /etc/
 cd cli
 source $HOME/.poetry/env && poetry update && poetry install
-sudo chmod +x /etc/rc.local
-sudo systemctl enable rc-local
-echo "Add READme"
