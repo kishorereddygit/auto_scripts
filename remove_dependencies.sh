@@ -9,3 +9,8 @@ sudo apt-get uninstall \
     curl \
     gnupg \
     lsb-release -y
+sudo apt-get uninstall docker-ce docker-ce-cli containerd.io -y
+sudo pip3 uninstall docker-compose
+sudo apt-get uninstall pi-bluetooth avahi-utils -y
+sudo apt uninstall net-tools -y
+sudo apt-get uninstall linux-modules-extra-raspi -y
