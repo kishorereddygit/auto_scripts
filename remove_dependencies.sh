@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 sudo apt-get remove git gcc g++ python pkg-config libssl-dev libdbus-1-dev \
      libglib2.0-dev libavahi-client-dev ninja-build python3-venv python3-dev \
      python3-pip unzip libgirepository1.0-dev libcairo2-dev python3-pip zip pi-bluetooth -y
