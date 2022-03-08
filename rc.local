@@ -1,2 +1,0 @@
-#!/bin/bash
-sudo -i -u ubuntu /home/ubuntu/start-test-harness.sh
