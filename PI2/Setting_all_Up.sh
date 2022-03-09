@@ -6,3 +6,4 @@ git checkout develop
 cd ..
 cd backend/
 git checkout develop
+echo "Reboot"
