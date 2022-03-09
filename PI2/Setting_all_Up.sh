@@ -6,4 +6,3 @@ git checkout develop
 cd ..
 cd backend/
 git checkout develop
-rm -rf third_party
