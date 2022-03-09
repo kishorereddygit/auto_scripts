@@ -16,15 +16,15 @@ scripts/examples/gn_build_example.sh examples/ota-requestor-app/linux examples/o
 scripts/examples/gn_build_example.sh examples/door-lock-app/linux/ out/door-lock-app
 cd ~
 cd apps
-mv ../chip-certification-tool/backend/third_party/connectedhomeip/repo/out/debug/chip-tool chip-tool
-mv ../chip-certification-tool/backend/third_party/connectedhomeip/repo/out/debug/chip-shell chip-shell
-mv ../chip-certification-tool/backend/third_party/connectedhomeip/repo/out/debug/chip-cert chip-cert
-mv ../chip-certification-tool/backend/third_party/connectedhomeip/repo/examples/all-clusters-app/linux/out/all-clusters-app/chip-all-clusters-app all-cluster-app
-mv ../chip-certification-tool/backend/third_party/connectedhomeip/repo/examples/lighting-app/linux/out/lighting-app/chip-lighting-app lighting-app
-mv ../chip-certification-tool/backend/third_party/connectedhomeip/repo/examples/tv-casting-app/linux/out/tv-casting-app/chip-tv-casting-app tv-casting-app
-mv ../chip-certification-tool/backend/third_party/connectedhomeip/repo/examples/tv-app/linux/out/tv-app/chip-tv-app tv-app
-mv ../chip-certification-tool/backend/third_party/connectedhomeip/repo/examples/bridge-app/linux/out/bridge-app/chip-bridge-app bridge-app
-mv ../chip-certification-tool/backend/third_party/connectedhomeip/repo/examples/thermostat/linux/out/thermostat/thermostat-app thermostat-app
-mv ../chip-certification-tool/backend/third_party/connectedhomeip/repo/examples/ota-requestor-app/linux/out/host/chip-ota-requestor-app ota-requestor-app
-mv ../chip-certification-tool/backend/third_party/connectedhomeip/repo/examples/ota-provider-app/linux/out/host/chip-ota-provider-app ota-provider-app
-mv ../chip-certification-tool/backend/third_party/connectedhomeip/repo/out/door-lock-app/chip-door-lock-app door-lock-app
+mv ../connectedhomeip/out/debug/chip-tool chip-tool
+mv ../connectedhomeip/out/debug/chip-shell chip-shell
+mv ../connectedhomeip/out/debug/chip-cert chip-cert
+mv ../connectedhomeip/examples/all-clusters-app/linux/out/all-clusters-app/chip-all-clusters-app all-cluster-app
+mv ../connectedhomeip/examples/lighting-app/linux/out/lighting-app/chip-lighting-app lighting-app
+mv ../connectedhomeip/examples/tv-casting-app/linux/out/tv-casting-app/chip-tv-casting-app tv-casting-app
+mv ../connectedhomeip/examples/tv-app/linux/out/tv-app/chip-tv-app tv-app
+mv ../connectedhomeip/examples/bridge-app/linux/out/bridge-app/chip-bridge-app bridge-app
+mv ../connectedhomeip/examples/thermostat/linux/out/thermostat/thermostat-app thermostat-app
+mv ../connectedhomeip/examples/ota-requestor-app/linux/out/host/chip-ota-requestor-app ota-requestor-app
+mv ../connectedhomeip/examples/ota-provider-app/linux/out/host/chip-ota-provider-app ota-provider-app
+mv ../connectedhomeip/out/door-lock-app/chip-door-lock-app door-lock-app
