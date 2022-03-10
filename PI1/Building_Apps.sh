@@ -13,7 +13,7 @@ scripts/examples/gn_build_example.sh      examples/lighting-app/linux/      exam
 scripts/examples/gn_build_example.sh      examples/thermostat/linux/      examples/thermostat/linux/out/thermostat chip_inet_config_enable_ipv4=false
 scripts/examples/gn_build_example.sh examples/ota-provider-app/linux examples/ota-provider-app/linux/out/host 'chip_config_network_layer_ble=false'
 scripts/examples/gn_build_example.sh examples/ota-requestor-app/linux examples/ota-requestor-app/linux/out/host 'chip_config_network_layer_ble=false'
-scripts/examples/gn_build_example.sh examples/door-lock-app/linux/ out/door-lock-app
+scripts/examples/gn_build_example.sh examples/door-lock-app/linux/ out/door-lock-app chip_inet_config_enable_ipv4=false
 cd ~
 cd apps
 mv ../connectedhomeip/out/debug/chip-tool chip-tool
