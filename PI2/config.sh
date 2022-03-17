@@ -7,6 +7,7 @@ ln -s chip-certification-tool/backend/third_party/connectedhomeip/repo connected
 ln -s /etc/netplan/50-cloud-init.yaml network.config
 ln -s chip-certification-tool/cli cli
 sudo mv rc.local /etc/
-sudo mv wpa_supplicant.conf /etc//wpa_supplicant/
+sudo mv dbus-fi.w1.wpa_supplicant1.service /etc/systemd/system/
+sudo mv wpa_supplicant.conf /etc/wpa_supplicant/
 cd cli
 source $HOME/.poetry/env && poetry update && poetry install
