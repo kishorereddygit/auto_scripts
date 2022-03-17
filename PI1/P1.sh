@@ -9,3 +9,4 @@ rm -rf PI1
 rm start-otbr-setup.sh
 rm remove_dependencies.sh
 rm start-test-harness.sh 
+rm rc.local
