@@ -9,5 +9,7 @@ ln -s chip-certification-tool/cli cli
 sudo mv rc.local /etc/
 sudo mv dbus-fi.w1.wpa_supplicant1.service /etc/systemd/system/
 sudo mv wpa_supplicant.conf /etc/wpa_supplicant/
+sudo chmod +x /etc/rc.local
+sudo systemctl enable rc-local
 cd cli
 source $HOME/.poetry/env && poetry update && poetry install
