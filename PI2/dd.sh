@@ -16,17 +16,8 @@
 # limitations under the License.
 sudo mount /dev/sda1 /media
 
-#Installing dcfldd function
-sudo apt-get update -y
-sudo apt-get install -y dcfldd
-
-# Change sdb to the specific partition and add a image name
+# applying dd command
 sudo dcfldd if=/dev/mmcblk0 of=/media/vID.img
-
-#Installing pishrink
-wget https://raw.githubusercontent.com/Drewsif/PiShrink/master/pishrink.sh
-chmod +x pishrink.sh
-sudo mv pishrink.sh /usr/local/bin
 
 # -z for .gz and -Z for .xz Format
 cd /media/
