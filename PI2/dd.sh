@@ -17,8 +17,12 @@
 sudo mount /dev/sda1 /media
 
 # applying dd command
-sudo dcfldd if=/dev/mmcblk0 of=/media/vID.img
+sudo dcfldd if=/dev/mmcblk0 of=/media/$1.img
+if [ $? -eq 0 ]; then
 
-# -z for .gz and -Z for .xz Format
+#reducing size of the image using pishrink
 cd /media/
-sudo pishrink.sh -z vID.img
+sudo pishrink.sh -z $1.img
+else
+   echo FAIL
+fi
