@@ -6,4 +6,4 @@ git checkout develop
 cd ..
 cd backend/
 git checkout develop
-echo "Reboot"
+rm -rf third_party/
