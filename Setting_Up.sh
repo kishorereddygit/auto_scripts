@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-git clone --recurse-submodules git@github.com:project-chip/connectedhomeip.git
+git clone --recursive git@github.com:project-chip/connectedhomeip.git
 cd connectedhomeip/
-git checkout 5cbe2931f64e16a44fc843e148325909fbe1511d
+git checkout master
 cd ~
 mkdir apps
