@@ -3,6 +3,8 @@
   Execution order:
   
   dependencies.sh
+  
+  move_to_root.sh
 
   test_harness.sh
 
