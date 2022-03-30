@@ -32,5 +32,5 @@ chmod +x pishrink.sh
 sudo mv pishrink.sh /usr/local/bin
 
 sudo modprobe ip6table_filter
-sudo usermod -aG docker $USER
-newgrp docker
+#sudo usermod -aG docker $USER
+#newgrp docker
