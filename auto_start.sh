@@ -8,9 +8,10 @@ else
 sudo bash ./kernal_patch.sh
 rm kernal_patch.sh  
 bash ./dependencies.sh &&
-bash ./move_to_root.sh &&
+bash ./move_to_root.sh 
+cd ~
 bash ./test_harness.sh &&
-bash ./connectedhomeip.sh 
+bash ./connectedhomeip.sh &&
 bash ./config.sh
 touch flag.txt
 sudo reboot
