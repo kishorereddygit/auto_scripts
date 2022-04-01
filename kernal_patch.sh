@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
-sudo sed -i 's/APT::Periodic::Update-Package-Lists "1";/APT::Periodic::Update-Package-Lists "0";/g' /etc/apt/apt.conf.d/10periodic
-sudo systemctl reboot
+sudo apt update -y
+sudo apt-get install linux-raspi-tools-5.13.0-1022 -y
+sudo apt upgrade -y
+sudo reboot 
