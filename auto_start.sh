@@ -5,10 +5,11 @@ bash ./building_Apps.sh
 rm flag.txt
 dd.sh v_latest
 else
+bash ./move_to_root.sh 
+cd ~
 sudo bash ./kernal_patch.sh
 rm kernal_patch.sh  
 bash ./dependencies.sh &&
-bash ./move_to_root.sh 
 cd ~
 bash ./test_harness.sh &&
 bash ./connectedhomeip.sh &&
