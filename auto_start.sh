@@ -4,6 +4,7 @@ bash ./docker_Setup.sh
 bash ./building_Apps.sh
 rm flag.txt
 bash ./remove_scripts.sh
+sudo cloud-init clean
 dd.sh v_latest
 else
 bash ./move_to_root.sh 
