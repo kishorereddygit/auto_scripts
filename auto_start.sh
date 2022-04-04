@@ -9,7 +9,7 @@ bash ./move_to_root.sh
 cd /home/ubuntu
 pwd
 #sudo bash ./kernal_patch.sh
-sudp bash ./dependencies.sh &&
+sudo bash ./dependencies.sh &&
 #cd /home/ubuntu
 sudo bash ./test_harness.sh &&
 bash ./connectedhomeip.sh &&
