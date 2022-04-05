@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-
-sudo apt update -y
-sudo apt upgrade -y
 sudo apt-get install git gcc g++ python pkg-config libssl-dev libdbus-1-dev \
      libglib2.0-dev libavahi-client-dev ninja-build python3-venv python3-dev \
      python3-pip unzip libgirepository1.0-dev libcairo2-dev python3-pip zip pi-bluetooth -y
@@ -18,7 +15,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o 
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update -y
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
-sudo pip3 install docker-compose 
+sudo pip3 install docker-compose -y
 sudo apt-get install pi-bluetooth avahi-utils -y
 sudo apt install net-tools -y
 sudo apt-get install linux-modules-extra-raspi -y
@@ -31,7 +28,3 @@ sudo apt-get install -y dcfldd
 wget https://raw.githubusercontent.com/Drewsif/PiShrink/master/pishrink.sh
 chmod +x pishrink.sh
 sudo mv pishrink.sh /usr/local/bin
-
-sudo modprobe ip6table_filter
-sudo usermod -aG docker $USER
-newgrp docker
