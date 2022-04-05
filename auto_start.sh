@@ -10,7 +10,7 @@ cd /home/ubuntu
 sudo bash ./kernal_patch.sh
 sudo rm -rf kernal_patch.sh
 sudo bash ./dependencies.sh &&
-sudo bash ./test_harness.sh &&
+bash ./test_harness.sh &&
 bash ./connectedhomeip.sh &&
 bash ./config.sh
 touch flag.txt
