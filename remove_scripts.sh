@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd ~
+cd /home/ubuntu
 rm README.md 
 rm auto_start.sh 
 rm building_Apps.sh 
