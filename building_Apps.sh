@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd ~
+cd /home/ubuntu
 cd connectedhomeip/
 source ./scripts/bootstrap.sh
 gn gen out/debug --args='chip_mdns="platform" chip_inet_config_enable_ipv4=false'
@@ -14,7 +14,7 @@ scripts/examples/gn_build_example.sh      examples/thermostat/linux/      exampl
 scripts/examples/gn_build_example.sh examples/ota-provider-app/linux examples/ota-provider-app/linux/out/host 'chip_config_network_layer_ble=false'
 scripts/examples/gn_build_example.sh examples/ota-requestor-app/linux examples/ota-requestor-app/linux/out/host 'chip_config_network_layer_ble=false'
 scripts/examples/gn_build_example.sh examples/door-lock-app/linux/ out/door-lock-app chip_inet_config_enable_ipv4=false
-cd ~
+cd /home/ubuntu
 cd apps
 ln -s ../connectedhomeip/out/debug/chip-tool chip-tool
 ln -s ../connectedhomeip/out/debug/chip-shell chip-shell
@@ -28,7 +28,7 @@ ln -s ../connectedhomeip/examples/thermostat/linux/out/thermostat/thermostat-app
 ln -s ../connectedhomeip/examples/ota-requestor-app/linux/out/host/chip-ota-requestor-app ota-requestor-app
 ln -s ../connectedhomeip/examples/ota-provider-app/linux/out/host/chip-ota-provider-app ota-provider-app
 ln -s ../connectedhomeip/out/door-lock-app/chip-door-lock-app door-lock-app
-cd ~
+cd /home/ubuntu
 sudo mv artifacts/rc.local /etc/
 sudo chmod +x /etc/rc.local
 sudo systemctl enable rc-local
