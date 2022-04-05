@@ -4,7 +4,7 @@ cd ~
 sudo cp chip-certification-tool/backend/test_environment.config.example  chip-certification-tool/backend/test_environment.config
 ln -s chip-certification-tool/backend/test_environment.config test-harness.config
 ln -s chip-certification-tool/backend/third_party/connectedhomeip/repo connectedhomeip
-ln -s /etc/netplan/50-cloud-init.yaml network.config
+#ln -s /etc/netplan/50-cloud-init.yaml network.config
 ln -s chip-certification-tool/cli cli
 sudo mv artifacts/dbus-fi.w1.wpa_supplicant1.service /etc/systemd/system/
 sudo mv artifacts/wpa_supplicant.conf /etc/wpa_supplicant/
