@@ -3,16 +3,14 @@ if test -f "$FILE"; then
 bash ./docker_Setup.sh
 bash ./building_Apps.sh
 rm flag.txt
-bash ./remove_scripts.sh
-sudo cloud-init clean
 dd.sh v_latest
 else
-bash ./move_to_root.sh 
-cd ~
-sudo bash ./kernal_patch.sh 
-bash ./dependencies.sh &&
-cd ~
-bash ./test_harness.sh &&
+bash ./move_to_root.sh
+cd /home/ubuntu
+sudo bash ./kernal_patch.sh
+sudo rm -rf kernal_patch.sh
+sudo bash ./dependencies.sh &&
+sudo bash ./test_harness.sh &&
 bash ./connectedhomeip.sh &&
 bash ./config.sh
 touch flag.txt

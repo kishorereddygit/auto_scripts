@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-
-cd ~
+cd /home/ubuntu
 sudo cp chip-certification-tool/backend/test_environment.config.example  chip-certification-tool/backend/test_environment.config
 ln -s chip-certification-tool/backend/test_environment.config test-harness.config
 ln -s chip-certification-tool/backend/third_party/connectedhomeip/repo connectedhomeip
