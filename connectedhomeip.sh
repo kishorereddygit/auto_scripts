@@ -3,5 +3,5 @@
 git clone --recursive git@github.com:project-chip/connectedhomeip.git
 cd connectedhomeip/
 git checkout master
-cd ~
+cd /home/ubuntu
 mkdir apps
