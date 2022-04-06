@@ -14,14 +14,17 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o 
  echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
 sudo apt-get update -y
+
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
-sudo pip3 install docker-compose -y
+sudo pip3 install docker-compose
 sudo apt-get install pi-bluetooth avahi-utils -y
 sudo apt install net-tools -y
 sudo apt-get install linux-modules-extra-raspi -y
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
 sudo apt install generate-ninja -y
+
 #installing deps for dd
 sudo apt-get update -y
 sudo apt-get install -y dcfldd
