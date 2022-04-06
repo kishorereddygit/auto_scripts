@@ -13,7 +13,7 @@ sudo rm -rf kernal_patch.sh
 sudo bash ./dependencies.sh &&
 bash ./test_harness.sh &&
 bash ./connectedhomeip.sh &&
-bash ./config.sh
+sudo bash ./config.sh
 touch flag.txt
 sudo reboot
 fi
