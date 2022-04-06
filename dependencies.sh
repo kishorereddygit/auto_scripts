@@ -2,8 +2,8 @@
 sudo apt-get install git gcc g++ python pkg-config libssl-dev libdbus-1-dev \
      libglib2.0-dev libavahi-client-dev ninja-build python3-venv python3-dev \
      python3-pip unzip libgirepository1.0-dev libcairo2-dev python3-pip zip pi-bluetooth -y
-sudo apt install default-jre -y
-sudo apt install default-jdk -y
+#sudo apt install default-jre -y
+#sudo apt install default-jdk -y
 sudo apt-get install libreadline-dev -y
 sudo apt-get install \
     ca-certificates \
@@ -19,6 +19,7 @@ sudo apt-get update -y
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 sudo pip3 install docker-compose
+
 sudo apt-get install pi-bluetooth avahi-utils -y
 sudo apt install net-tools -y
 sudo apt-get install linux-modules-extra-raspi -y
@@ -28,6 +29,7 @@ sudo apt install generate-ninja -y
 #installing deps for dd
 sudo apt-get update -y
 sudo apt-get install -y dcfldd
+
 #installing pishrink
 wget https://raw.githubusercontent.com/Drewsif/PiShrink/master/pishrink.sh
 chmod +x pishrink.sh
