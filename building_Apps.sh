@@ -28,8 +28,3 @@ ln -s ../connectedhomeip/examples/thermostat/linux/out/thermostat/thermostat-app
 ln -s ../connectedhomeip/examples/ota-requestor-app/linux/out/host/chip-ota-requestor-app ota-requestor-app
 ln -s ../connectedhomeip/examples/ota-provider-app/linux/out/host/chip-ota-provider-app ota-provider-app
 ln -s ../connectedhomeip/out/door-lock-app/chip-door-lock-app door-lock-app
-cd ~
-sudo mv artifacts/rc.local /etc/
-sudo chmod +x /etc/rc.local
-sudo systemctl enable rc-local
-rm -rf artifacts/
