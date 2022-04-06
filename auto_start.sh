@@ -1,6 +1,7 @@
 FILE=/home/ubuntu/flag.txt
 if test -f "$FILE"; then
-bash ./docker_Setup.sh
+bash ./docker_perms.sh && 
+bash ./docker_Setup.sh &&
 bash ./building_Apps.sh
 rm flag.txt
 bash ./remove_scripts.sh
