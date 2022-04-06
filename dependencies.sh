@@ -4,6 +4,7 @@ sudo apt-get install git gcc g++ python pkg-config libssl-dev libdbus-1-dev \
      python3-pip unzip libgirepository1.0-dev libcairo2-dev python3-pip zip pi-bluetooth -y
 sudo apt install default-jre -y
 sudo apt install default-jdk -y
+sudo apt-get install libreadline-dev -y
 sudo apt-get install \
     ca-certificates \
     curl \
