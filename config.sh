@@ -11,5 +11,10 @@ mv artifacts/start_otbr_setup.sh ~
 mv artifacts/start_test_harness.sh ~
 sudo chmod u+x start_otbr_setup.sh
 sudo chmod u+x start_test_harness.sh
+cd /home/ubuntu
+sudo mv artifacts/rc.local /etc/
+sudo chmod +x /etc/rc.local
+sudo systemctl enable rc-local
+rm -rf artifacts/
 cd cli
 source $HOME/.poetry/env && poetry update && poetry install
