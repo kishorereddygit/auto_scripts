@@ -9,7 +9,6 @@ else
 bash ./move_to_root.sh
 cd /home/ubuntu
 sudo bash ./kernal_patch.sh
-sudo rm -rf kernal_patch.sh
 sudo bash ./dependencies.sh &&
 bash ./test_harness.sh &&
 bash ./connectedhomeip.sh &&
