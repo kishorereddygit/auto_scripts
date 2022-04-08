@@ -5,7 +5,7 @@ bash ./docker_Setup.sh &&
 bash ./building_Apps.sh
 rm flag.txt
 bash ./remove_scripts.sh
-dd.sh v_latest
+bash ./dd.sh v_latest
 else
 bash ./move_to_root.sh
 cd /home/ubuntu
