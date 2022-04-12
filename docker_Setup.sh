@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd ~/chip-certification-tool/
+cd /home/ubuntu/chip-certification-tool/
 docker-compose down
 ./scripts/build-no-cache.sh
 cd backend/
