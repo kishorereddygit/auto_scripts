@@ -4,7 +4,7 @@
 sudo modprobe ip6table_filter
 
 #For docker
-sudo chmod u+x /var/run/docker.sock
+#sudo chown $USER /var/run/docker.sock
 
-#sudo usermod -aG docker $USER
+sudo usermod -a -G docker $USER
 #newgrp docker
