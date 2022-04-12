@@ -10,7 +10,7 @@ else
 bash ./move_to_root.sh
 cd /home/ubuntu
 sudo bash ./kernal_patch.sh
-bash ./dependencies.sh &&
+sudo bash ./dependencies.sh
 bash ./test_harness.sh &&
 bash ./connectedhomeip.sh &&
 sudo bash ./config.sh
